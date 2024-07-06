@@ -9,7 +9,6 @@ class BookInfo(models.Model):
 class PeopleInfo(models.Model):
     name=models.CharField(max_length=20)
     gender=models.BooleanField()
-
     # 外键约束
     book=models.ForeignKey(BookInfo,on_delete=models.CASCADE)
 
