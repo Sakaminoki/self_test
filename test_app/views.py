@@ -16,3 +16,7 @@ def template_test(request):
     }
 
     return render(request,'test_app/index.html',context)
+
+def manyshop(request,city_id,shop_id):
+    print(city_id,shop_id)
+    return HttpResponse(city_id)
